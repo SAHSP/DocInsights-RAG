@@ -1,0 +1,67 @@
+About the  proposed Improvements in the Pipeline_desing.md
+6 Suggested Improvements
+6.1
+go ahead
+
+6.2
+rearnaking work well and good for me,m, but before the reanking of the chunks therer parent cxhunks have to be called first, because the chunking stategy
+that i am going to use is Parent - Child Chunking Strategy. 
+
+Query
+  ↓
+[Embedding Model]
+  ↓
+ANN Search → Top-20 Child Chunks (small, precise hits)
+  ↓
+Swap children → fetch their Parent Chunks
+  ↓
+[Reranker] scores (Query vs each Parent Chunk)
+  ↓
+Top-5 reranked Parent Chunks
+  ↓
+LLM
+
+
+6.3 
+no for this as of now, the user will 2 diffrent modes to select between for developement.
+
+6.4
+no agenetic chunking as of now, but maybe in phase 2
+
+6.5
+works for me
+
+6.6
+work for me 
+
+6.7
+yes this is very important, each file uploaded should follow a async process, and shouldn't affect the app in genral.
+
+6.8
+works for me 
+
+6.9
+no qdrant , go with opensearch
+
+6.10
+will run a self hosted LLM for saftey of data, mostly via Ollama or Cloud via Openrouter or Chatgpt models or Gemini models
+
+7. Implementation Strategies
+Phase 1 is fine 
+but there are somethings of phase 2 i want in phase 1
+that is 
+Add Word document (.docx) support via python-docx 
+
+
+My Suggestion
+1. the tokenizer based on which we decide a chunk size, is soemthign that i am not sure with like, a hard limit of 480 or 500. look into it and go with the
+best one.
+2. Speaking about the way we are going to build, i want everthign to built as api's so each process is a fucntion or api, which make sit easier to debug
+3. and for intial test stage we could go with streamlit as forntend fopr testing and then could integrate it with frontend. 
+
+Now give me the database Schema for MinIo and PostgresSQL , also mention how data will flow and tables of postgre how they will fetch and fee data.
+
+
+
+
+
