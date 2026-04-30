@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables - NEVER push these
+backend/.env
+.env
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Model cache - these are large, download on setup
+backend/app/models_cache/
+*.bin
+*.safetensors
+
+# Temp files from extraction
+backend/tmp/
+tmp/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Alembic (if added later)
+# alembic/versions/
+
+# Settings override file (runtime, not for git)
+backend/app/settings_override.json
